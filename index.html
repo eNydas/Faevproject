@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> 
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>FAEV</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container" >
+                <a href="index.html" class="nav__logo" >
+                    <img src="/assets/Img/Faev logo.png" alt=""></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>Acerca de nosotros 
+                            </a>
+                            <div class="nav__content">
+                                <a href="/aboutus/historia.html">Historia</a>
+                                <a href="/aboutus/team.html">Equipo de trabajo</a>
+                                <a href="/aboutus/contactanos.html">Contactanos</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#programs" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Programas
+                            </a>
+                            <div class="nav__content">
+                                <a href="/programs/teatro.html">Teatro</a>
+                                <a href="/programs/dibujo.html">Dibujo</a>
+                                <a href="/programs/musica.html">Musica</a>
+                                <a href="/programs/medioambiente.html">Medio Ambiente</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Servicios
+                            </a>
+                            <div class="nav__content">
+                                <a href="">Proyectos</a>
+                                <a href="">Calendario</a>
+                                <a href="">Testimonios</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#galery" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Galeria Faev 
+                            </a>
+                            <div class="nav__content">
+                                <a href="">Sala Faev(Teatro)</a>
+                                <a href="">Galeria de arte</a>
+                                <a href="">Otros</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#articulacion" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Articulación
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__menu">
+                    <a href="" class="nav__donate">Donaciones</a>
+                    
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change buttton-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kVgx_2KJhwY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contactanos</h2>
+                <span class="section__subtitle">se parte de nuestro equipo de trabajo</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Telefono</h3>
+                                <span class="contatc__subtitle">(60) 300 876 89 30</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">E-mail</h3>
+                                <span class="contatc__subtitle">danyvargase@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Ubicacion</h3>
+                                <span class="contatc__subtitle">Bogotá, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Nombre</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">E-mail</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Proyecto</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Mensaje</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div class="submit__btn">
+                            <input type="submit" class="button__icon button button--flex">
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="/assets/js/main.js"></script>
+    </body>
