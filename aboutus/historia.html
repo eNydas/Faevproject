@@ -12,6 +12,11 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="../assets/css/styles.css">
+        <!--==================SCROLL REVEAL==============-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+	        <script>
+		        ScrollReveal({ duration: 1000 })
+	        </script>
 
         <title>FAEV</title>
     </head>
@@ -44,10 +49,10 @@
                                 <i class="uil uil-file-alt nav__icon"></i>Programas
                             </a>
                             <div class="nav__content">
-                                <a href="">Teatro</a>
-                                <a href="">Dibujo</a>
-                                <a href="">Musica</a>
-                                <a href="">Medio Ambiente</a>
+                                <a href="../programs/teatro.html">Teatro</a>
+                                <a href="../programs/dibujo.html">Dibujo</a>
+                                <a href="../programs/musica.html">Musica</a>
+                                <a href="../programs/medioambiente.html">Medio Ambiente</a>
                             </div>
                         </li>
                         <li class="nav__item">
@@ -93,4 +98,73 @@
             </nav>
         </header>
         <!--==================== MAIN ====================-->
+        <main class="main__container">
+            <!--=============Mision y Vision==============-->
+            <section class="misionvision__section grid container">
+                <h1 class="mision__title">
+                    Mision FAEV
+                </h1>
+                <div class="mision__content">
+                    <p>
+                        La <b>FUNDACIÓN ARTE EDUCACIÓN PARA LA VIDA</b> busca contribuir a la educación comunitaria
+                        en las localidades del sur de la ciudad de Bogotá, con la intención de promover escenarios
+                        populares para la reflexión, aprendizaje y construcción de cultura. Es a través de la
+                        democratización de las artes como queremos fomentar el derecho y respeto a la vida,
+                        contemplando la importancia e incidencia de cada ser vivo y los recursos naturales en nuestro
+                        entorno.
+                    </p>
+                </div>
+                <div class="mision__img">
+                    <img src="/assets/Img/Faev-Mision.png" alt="FAEV - FUNDACIÓN - ARTE - EDUCACIÓN - Faev - Fundacion - Arte - Educacion">
+                </div>
+                <h1 class="vision__title">
+                    Vision FAEV
+                </h1>
+                <div class="vision__content">
+                    <p>
+                        Posicionarse a nivel local, distrital y nacional, como una organización que por medio
+                        de pedagogías artísticas y la educación comunitaria- popular desarrolla procesos de
+                        construcción de tejido social, generando nuevas ciudadanías de paz conscientes de sus
+                        dimensiones humanas: emocional, social, comunicativa, estética, psicológica,
+                        medioambiental y cultural.
+                    </p>
+                </div>
+                <div class="vision__img">
+                    <img src="/assets/Img/Faev vision.jpg" alt="FAEV - FUNDACIÓN - ARTE - EDUCACIÓN - Faev - Fundacion - Arte - Educacion">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <footer class="footer__container">
+            <div class="footer__bg">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1920" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+                    <g mask="url(&quot;#SvgjsMask1090&quot;)" fill="none">
+                        <path d="M 0,83 C 96,111.8 288,224 480,227 C 672,230 768,101.8 960,98 C 1152,94.2 1344,186 1440,208L1440 560L0 560z" fill="#184a7e"></path>
+                        <path d="M 0,409 C 96,424 288,488.2 480,484 C 672,479.8 768,374.4 960,388 C 1152,401.6 1344,519.2 1440,552L1440 560L0 560z" fill="#2264ab"></path>
+                    </g>
+                    <defs>
+                        <mask id="SvgjsMask1090">
+                            <rect width="1440" height="560" fill="#ffffff"></rect>
+                        </mask>
+                    </defs>
+                </svg>
+            </div>
+
+
+        </footer>
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="/assets/js/main.js"></script>
+
+        <!--====================SCROLL REVEAL================-->
+        <script>
+            ScrollReveal().reveal('.misionvision__section')
+        </script>
     </body>

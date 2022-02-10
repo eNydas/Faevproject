@@ -110,7 +110,7 @@ html{
 }
 
 body{
-    margin: 0 0 var(--header-height) 0;
+   /* margin: 0 0 var(--header-height) 0;*/
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -250,6 +250,7 @@ header.abajo .nav__donate:hover{
     border-color: var(--text-color);
 }
 
+/*
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
@@ -263,6 +264,7 @@ header.abajo .nav__donate:hover{
         transition: .3s;
     }
 }
+*/
 
 .nav__list{
     grid-template-columns: repeat(3, 1fr);
@@ -344,7 +346,6 @@ header.abajo .nav__donate:hover{
 /*==================== HOME ====================*/
 
 .home__container{
-    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -458,8 +459,45 @@ header.abajo .nav__donate:hover{
     color: var(--first-color-alt);
 }
 
+.whatsapp__logo{
+    position: fixed;
+    width: 60px;
+    bottom: 40px;
+    right: 40px;
+    padding-right: 0;
+    z-index: 10;
+}
+
+.whatsapp__logo:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
 
 
+/*====================HISTORIA====================*/
+
+.mision__title{
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.mision__content{
+    text-align: justify;
+}
+
+.mision__img{
+    padding-top: 1rem;
+
+}
+
+.vision__title{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.vision__content{
+    text-align: justify;
+}
 
 
 
