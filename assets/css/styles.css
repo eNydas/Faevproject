@@ -114,9 +114,10 @@ body{
     margin: 0 0 var(--header-height) 0;
     font-family: var(--title-font);
     font-size: var(--normal-font-size);
-    background-image: url(/assets/Img/wallpaper.png);
-    background-size: contain;
-    background-repeat: repeat;
+    /*background-image: url(/assets/Img/wallpaper.png);*/
+    background: rgb(11,140,214);
+    background: linear-gradient(180deg, rgba(11,140,214,1) 0%, rgba(209,235,250,1) 100%);background-size: contain;
+    /*background-repeat: repeat;*/
     background-color: var(--first-color-lighter);
     color: var(--text-color);
     background-attachment: fixed;
@@ -157,6 +158,8 @@ p{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    font-family: var(--text-font);
+    color: var(--body-color);
 }
 
 .section__title,
@@ -366,7 +369,7 @@ header.abajo .nav__btns i:hover{
         color: var(--first-color);
         cursor: pointer;
     }
-    
+   
     /* Active Modal */
     
     .active-modal{
@@ -621,7 +624,6 @@ header.abajo .nav__btns i:hover{
 }
 
 
-
 /*==================== CONTACT ME ====================*/
 
 .contact{
@@ -652,7 +654,8 @@ header.abajo .nav__btns i:hover{
 
 .contact__subtitle {
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--body-color);
+    font-family: var(--text-font);
 }
 
 .contact__form{
@@ -686,7 +689,7 @@ textarea{
     resize: none;
 }
 
-/*==================== CONTACT ME ====================*/
+/*==================== FOOTER ====================*/
 
 .footer__section{
     background-image: url(/assets/Img/Paisaje.svg);
@@ -801,12 +804,12 @@ textarea{
 /*====================HISTORIA====================*/
 
 .mision__title{
-    padding-top: 8rem;
     text-align: center;
 }
 
 .mision__content{
     text-align: justify;
+    color: var(--body-color);
 }
 
 .mision__img{
@@ -821,9 +824,8 @@ textarea{
 
 .vision__content{
     text-align: justify;
+    color: var(--body-color);
 }
-
-
 
 
 /*==================== MEDIA QUERIES ====================*/
@@ -1138,7 +1140,6 @@ textarea{
 .loader {
     display: block;
     margin: 20px auto 0;
-    vertical-align: middle;
 }
 
 #preloader {
