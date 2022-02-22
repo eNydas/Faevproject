@@ -7,13 +7,13 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 33.4; /*33.4 orange - Green 142 - Blue 230 - Pink 340 - Yellow 49*/
+    --hue-color: 39; /*33.4 orange - Green 142 - Blue 230 - Pink 340 - Yellow 49*/
     --hue-color-alt:203;
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 65%, 61%);
+    --first-color: hsl(var(--hue-color), 90%, 50%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --first-color-alt: hsl(var(--hue-color), 90%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 90%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -686,6 +686,55 @@ textarea{
     resize: none;
 }
 
+/*==================== CONTACT ME ====================*/
+
+.footer__section{
+    background-image: url(/assets/Img/Paisaje.svg);
+    background-size: cover;
+    display: grid;
+    padding-top: 4rem;
+}
+
+.footer__container{
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer__logo{
+    margin: auto;
+    padding: 0 4rem 0 4rem;
+}
+
+.footer__container span{
+    color: var(--first-color);
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 25px;
+}
+.footer__container p{
+    color: var(--body-color);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.footer__links h3{
+    color: var(--second-color);
+    text-align: center;
+    padding: .5rem;
+    font-size: 20px;
+}
+
+.footer__links li{
+    text-align: center;
+    padding: .4rem;
+}
+
+.footer__links a{
+    color: var(--body-color);
+    font-family: var(--text-font);
+}
 
 /*==================== BUTTONS ====================*/
 
@@ -967,29 +1016,43 @@ textarea{
             margin-bottom: 0;
         }
         .footer__section{
-            background-color: #67c6428a;
-            padding: 2rem;
+            background-image: url(/assets/Img/Paisaje.svg);
+            padding: 4rem 0 3rem 0;
             display: grid;
+            background-size: cover;
+            margin-top: 3rem;
         }
+
         .footer__container{
             display: inline-block;
-            gap: 2 rem;
             text-align: center;
+            gap: 2rem;
         }
-        .footer__container h1{
-            font-size: 100px;
-            color: var(--second-color);
-            padding-bottom: 0;
+        .footer__grid{
+            display: flex;
         }
+        
         .footer__container span{
             color: var(--first-color);
             padding-bottom: 0rem;
+
         }
         .footer__container p{
-            color: var(--text-color);
+            color: var(--body-color);
             padding-top: 1rem;
             font-size: 15px;
             font-weight: bold;
+            max-width: 900px;
+        }
+        .footer__description{
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.281);
+            padding: 1rem;
+        }
+        .footer__container span, p{
+            margin: auto;
         }
         .footer__links{
             display: grid;
@@ -1010,7 +1073,7 @@ textarea{
         }
 
         .footer__links a{
-            color: var(--text-color);
+            color: var(--body-color);
             font-size: 15px;
             font-weight: bold;
         }
