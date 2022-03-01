@@ -477,8 +477,12 @@ header.abajo .nav__btns i:hover{
 }
 
 .home__title-content{
-    background-image: url(/assets/Img/Atardecer/Banner.jpg);
-    position: static;
+    background-image: url(/assets/Img/Sol\ Faev.png);
+    position: sticky;
+    top: 0px;
+    background-position: left;
+    background-size: 150px;
+    background-repeat: no-repeat;
 }
 
 .home__title-container{
@@ -738,6 +742,18 @@ textarea{
     color: var(--body-color);
     font-family: var(--text-font);
 }
+
+.footer__end{
+    display: block;
+    background-color: var(--second-color);
+    font-size: 10px;
+    font-family: var(--text-font);
+    color: var(--first-color-lighter);
+    text-align: center;
+    padding: .3rem 0 .2rem;
+}
+
+
 
 /*==================== BUTTONS ====================*/
 
@@ -1019,7 +1035,7 @@ textarea{
         }
         .footer__section{
             background-image: url(/assets/Img/Paisaje.svg);
-            padding: 4rem 0 3rem 0;
+            padding: 4rem 0 0rem 0;
             display: grid;
             background-size: cover;
             margin-top: 3rem;
@@ -1079,6 +1095,53 @@ textarea{
             font-size: 15px;
             font-weight: bold;
         }
+        .footer__end{
+            display: block;
+            font-family: var(--text-font);
+            text-align: center;
+            color: var(--first-color-lighter);
+            bottom: 0px;
+            background-color: var(--second-color);
+            margin: 0px;
+            padding: .5rem 0 .3rem 0;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+
+        /*====================HISTORIA====================*/
+        .misionvision__section{
+        }
+        .mision__container{
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+        }
+
+        .mision__content{
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            text-align: justify;
+            color: var(--body-color);
+        }
+
+        .mision__title{
+            text-align: center;
+        }
+        
+        .mision__img{
+            padding-top: 1rem;
+
+        }
+
+        .vision__title{
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        .vision__content{
+            text-align: justify;
+            color: var(--body-color);
+        }
+
     }
 }
 
