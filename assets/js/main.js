@@ -97,3 +97,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function openNav() {
+    document.getElementById("myNav").style.width="100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+

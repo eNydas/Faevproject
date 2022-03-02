@@ -297,15 +297,15 @@ header.abajo .nav__btns i:hover{
     }
 
     div.down {
-        transition: .5s;
+        transition: .2s;
         background-color: var(--first-color);
     }
     .down i{
-        color: var(--body-color);
+        color: rgb(223, 223, 223);
     }
     div.show-menu .down i:hover {
         color: var(--text-color);
-        transition: 0.4s;
+        transition: 0.2s;
     }
     .nav__logo img{
         min-width: 94px;
@@ -533,9 +533,9 @@ header.abajo .nav__btns i:hover{
     width: 150px;
     top: -4.5%;
     left: -0.5%;
-    -webkit-animation: spin 2S0s linear infinite;
-    -moz-animation: spin 20s linear infinite;
-    animation: spin 20s linear infinite;
+    -webkit-animation: spin 120s linear infinite;
+    -moz-animation: spin 120s linear infinite;
+    animation: spin 120s linear infinite;
 }
 
 @-webkit-keyframes spin{
@@ -941,6 +941,139 @@ textarea{
 #Team{
     margin-bottom: var(--mb-3);
 }
+
+/*====================PROGRAMAS=========================*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--body-color);
+    display: block;
+    transition: .3s;
+    font-family: var(--text-font);
+}
+
+.overlay a:hover,
+.overlay a:focus{
+    color: var(--first-color-alt);
+
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    font-size: 40px;
+}
+
+.btn__nav{
+    background-color: rgba(0, 0, 0, .3);
+    margin: auto;
+    position: fixed;
+    width: 42px;
+    top: 75px;
+    border-radius: 0 25px 25px 0;
+}
+
+.btn__nav i{
+    font-size: 35px;
+    color: var(--body-color);
+    padding-top: 0;
+    transition: .3s;
+}
+
+.btn__nav i:hover{
+    color: #717171;
+}
+
+
+
+@media screen and (max-height: 450px){
+    .overlay a {
+        font-size: 15px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
+/* titeresMesa*/
+.titeresMesa h1{
+    text-align: center;
+    font-size: 45px;
+    color: var(--first-color);
+    font-weight: lighter;
+    margin-bottom: var(--mb-1-5);
+}
+
+.titeresMesa__title{
+text-align: center;
+font-weight: lighter;
+font-size: 30px;
+margin-bottom: var(--mb-0-75);
+}
+
+.titeresMesa__description{
+    color: var(--body-color);
+    text-align: center;
+}
+
+.titeresMesa__container{
+    margin-top: var(--mb-2);
+    background-color: var(--body-color);
+    padding-top: var(--mb-1-5);
+    padding-bottom: var(--mb-2);
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, .5);
+    z-index: 10;
+}
+
+.titeresMesa__content-title{
+    padding-bottom: var(--mb-1);
+}
+
+.titeresMesa__content-content{
+    padding-bottom: var(--mb-2);
+}
+.titeresMesa__video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.titeresMesa__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -1001,6 +1134,9 @@ textarea{
     .contact__information{
         grid-template-columns: 1fr, 1fr;
     }
+    .overlay a{
+        font-size: 35px;
+    }
     .about__container,
     .skills_container,
     .portfolio__content,
@@ -1008,6 +1144,11 @@ textarea{
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .titeresMesa__content{
+        padding: 2rem;
+    }
+
 
     .qualification__sections {
         display: grid;
@@ -1063,7 +1204,6 @@ textarea{
         }
 
         .header,
-        .main,
         .footer__container {
             padding: 0 1rem;
         }
@@ -1091,6 +1231,10 @@ textarea{
         .topNav__link{
             color: var(--body-color);
             padding: 0 .5rem;
+        }
+
+        .overlay a{
+            font-size: 40px;
         }
 
         .socialMedia{
@@ -1167,6 +1311,27 @@ textarea{
 
         .contact__information{
             justify-content: flex-start;
+        }
+        
+        .titeresMesa__content-content{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .titeresMesa__video{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .titeresMesa__video iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
         }
 
         body{
@@ -1369,6 +1534,14 @@ textarea{
             max-width: 180px;
         }
 
+        /*======titeresMesa=======*/
+        .titeresMesa__content-content{
+        }
+        .titeresMesa__content-content img{
+            max-height: 300px;
+            margin: auto;
+        }
+
     }
 }
 
@@ -1378,6 +1551,9 @@ textarea{
     .header{
         position: sticky;
         top: 0;
+    }
+    .overlay a{
+        font-size: 50px;
     }
     .header,
     .main,
@@ -1421,6 +1597,10 @@ textarea{
     }
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titeresMesa__content-content img{
+        max-height: 300px;
     }
 
 

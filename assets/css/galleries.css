@@ -1,0 +1,75 @@
+/*================titeresMesa==================*/
+
+.mySlydes__container{
+  margin-top: 1.5rem;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides:hover{
+    opacity: .8;
+  }
+
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: 1s;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    padding: .3;
+    color: rgb(207, 207, 207);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    display: none;
+    float: left;
+    width: 16.66%;
+  }
+  
