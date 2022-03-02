@@ -114,13 +114,9 @@ body{
     margin: 0 0 var(--header-height) 0;
     font-family: var(--title-font);
     font-size: var(--normal-font-size);
-    /*background-image: url(/assets/Img/wallpaper.png);*/
-    background: rgb(11,140,214);
-    background: linear-gradient(180deg, rgba(11,140,214,1) 0%, rgba(209,235,250,1) 100%);background-size: contain;
-    /*background-repeat: repeat;*/
+    background: linear-gradient(0deg, rgb(2, 20, 80) 0%, rgb(126, 202, 247) 30%, rgb(73, 183, 247) 100%);
     background-color: var(--first-color-lighter);
     color: var(--text-color);
-    background-attachment: fixed;
 }
 
 h1,h2,h3,h4{
@@ -145,6 +141,11 @@ img{
 p{
     font-family: var(--text-font);
 }
+
+span{
+    font-family: var(--text-font);
+    font-weight: bold;
+}
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
     padding: 1rem 0;
@@ -152,14 +153,15 @@ p{
 
 .section__title{
     font-size: var(--h1-font-size);
+    margin-top: var(--mb-0-5);
 }
 
 .section__subtitle{
     display: block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-1-5);
     font-family: var(--text-font);
-    color: var(--body-color);
+    color: var(--text-color);
 }
 
 .section__title,
@@ -187,6 +189,7 @@ p{
     z-index: var(--z-fixed);
     background-color: var(--body-color);
     transition: 0.7s;
+    height: var(--header-height);
 }
 
 header.abajo{
@@ -200,16 +203,15 @@ header.abajo{
 }
 /*==================== NAV ====================*/
 .nav{
-    max-width: 1080px;
     height: var(--header-height);
+    max-width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav__logo img{
-    width: 125px;
-
+    height: var(--header-height);
 }
 .nav__toggle{
     color: var(--title-color);
@@ -306,7 +308,9 @@ header.abajo .nav__btns i:hover{
         transition: 0.4s;
     }
     .nav__logo img{
-        width: 90px;}
+        min-width: 94px;
+        object-fit: contain;
+    }
 
     .nav__item:hover .nav__content{
         display: block;
@@ -477,7 +481,6 @@ header.abajo .nav__btns i:hover{
 }
 
 .home__title-content{
-    background-image: url(/assets/Img/Sol\ Faev.png);
     position: sticky;
     top: 0px;
     background-position: left;
@@ -520,6 +523,30 @@ header.abajo .nav__btns i:hover{
 	top: 0;
 	width: 100%;
 	}
+
+/*=========SUN========*/
+
+.sun{
+    position: fixed;
+    z-index: -1;
+    height: 150px;
+    width: 150px;
+    top: -4.5%;
+    left: -0.5%;
+    -webkit-animation: spin 2S0s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
 
 /*==================== SLIDES ====================*/
 
@@ -798,8 +825,6 @@ textarea{
     color: var(--first-color-alt);
 }
 
-
-
 .whatsapp__logo{
     position: fixed;
     width: 70px;
@@ -824,13 +849,12 @@ textarea{
 }
 
 .mision__content{
-    text-align: justify;
+    text-align: center;
     color: var(--body-color);
 }
 
 .mision__img{
-    padding-top: 1rem;
-
+    padding-top: 0rem;
 }
 
 .vision__title{
@@ -839,11 +863,84 @@ textarea{
 }
 
 .vision__content{
-    text-align: justify;
+    text-align: center;
     color: var(--body-color);
 }
 
+.vision__img{
+    padding-top: 0rem;
+}
 
+/*====================TEAM====================*/
+.team__section h2{
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    font-weight: lighter;
+}
+.team__section{
+    margin-top: var(--mb-2-5) ;
+}
+.team__container{
+    margin-top: var(--mb-1);
+    padding-top: 1rem;
+}
+.perfil__title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+.perfil__data{
+    min-height: 350px;
+}
+.perfil__description{
+    display: flex;
+    min-height: 300px;
+    padding: .5rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+
+.perfil__subtitle{
+    display: block;
+    text-align: center;
+    margin-bottom: var(--mb-0-75);
+}
+
+.img__box{
+    background-color: rgba(100%, 100%, 100%, 0.3);
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 350px;
+    background-position-x: left;
+    backface-visibility: visible;
+}
+
+.perfil__img{
+    display: block;
+    width: 350px;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+
+.perfil__description{
+    text-align: center;
+    color: var(--body-color);
+    margin-bottom: var(--mb-1-5);
+}
+
+.perfil__button a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 150px;
+}
+
+#Team{
+    margin-bottom: var(--mb-3);
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -861,6 +958,17 @@ textarea{
     .home__content {
         grid-template-columns: .25fr 3fr;
     }
+    .img__box{
+    
+        max-width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-height: 300px;
+        background-position-x: left;
+        backface-visibility: visible;
+    }
+
+
 
 }
 
@@ -885,6 +993,10 @@ textarea{
     .nav__modal-close{
         display: none;
     }
+
+    .nav__logo{
+        min-width: 104px;
+    }
     .contact__form,
     .contact__information{
         grid-template-columns: 1fr, 1fr;
@@ -903,6 +1015,32 @@ textarea{
         justify-content: center;
     }
 
+    .img__box{
+        background-color: var(--first-color);
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 300px;
+        background-position-x: left;
+        backface-visibility: visible;
+    }
+
+    .perfil__img{
+        display: block;
+        width: 250px;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    .team__perfil{
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: var(--mb-2);
+    }
+
+    .footer__links{
+        grid-template-columns: repeat(3, 1fr);
+    }
     @media screen and (min-width: 768px) {
         .container {
             margin-left: auto;
@@ -916,7 +1054,7 @@ textarea{
             padding: 0rem 0 4rem;
         }
         .section__subtitle {
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
         }
 
         .header{
@@ -963,7 +1101,7 @@ textarea{
             transition: .4s;
         }
         .nav {
-            height: calc(var(--header-height) + 1.5rem);
+            height: calc(var(--header-height));
             column-gap: 1rem;
         }
         .nav__btns,
@@ -1012,11 +1150,12 @@ textarea{
         }
 
         .news__container{
-            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-
+        .contact{
+            padding-top: 6rem;
+        }
         .contact__grid{
             display: flex;
             align-items: center;
@@ -1033,6 +1172,29 @@ textarea{
         body{
             margin-bottom: 0;
         }
+
+        .sun{
+            position: fixed;
+            z-index: -1;
+            height: 300px;
+            width: 300px;
+            top: 40%;
+            left: 10%;
+            -webkit-animation: spin 8s linear infinite;
+            -moz-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
+        }
+
+        @-webkit-keyframes spin{
+            100%{-webkit-transform: rotate(360deg);}
+        }
+        @-moz-keyframes spin{
+            100%{-webkit-transform: rotate(360deg);}
+        }
+        @keyframes spin{
+            100%{-webkit-transform: rotate(360deg);}
+        }
+
         .footer__section{
             background-image: url(/assets/Img/Paisaje.svg);
             padding: 4rem 0 0rem 0;
@@ -1110,17 +1272,18 @@ textarea{
 
         /*====================HISTORIA====================*/
         .misionvision__section{
+            padding: 2rem;
         }
         .mision__container{
-            display: grid;
             grid-template-columns: 1fr, 1fr;
         }
 
         .mision__content{
-            display: grid;
             grid-template-columns: 1fr, 1fr;
-            text-align: justify;
+            text-align: center;
             color: var(--body-color);
+            max-width: 900px;
+            margin: auto;
         }
 
         .mision__title{
@@ -1129,8 +1292,10 @@ textarea{
         
         .mision__img{
             padding-top: 1rem;
-
+            margin: auto;
+            max-width: 900px;
         }
+
 
         .vision__title{
             padding-top: 1rem;
@@ -1138,8 +1303,70 @@ textarea{
         }
 
         .vision__content{
-            text-align: justify;
+            text-align: center;
             color: var(--body-color);
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .vision__img{
+            padding-top: 1rem;
+            margin: auto;
+            max-width: 900px;
+        }
+
+        /*====================TEAM====================*/
+        .team__section{
+            margin-top: var(--mb-2-5);
+        }
+        .team__container{
+            margin-top: 0;
+            max-width: 900px;
+            padding-top: 6rem;
+        }
+        .team__perfil{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .img__box{
+            background-color: var(--body-color);
+            max-width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            max-height: 350px;
+            background-position-x: left;
+            backface-visibility: visible;
+        }
+        .perfil__img{
+            display: block;
+            width: 300px;
+            height: 100%;
+            margin: auto;
+            object-fit: contain;
+        }
+
+        .perfil__title{
+            text-align: center;
+            font-size: var(--h2-font-size);
+            margin-bottom: var(--mb-0-5);
+        }
+
+        .perfil__subtitle{
+            display: block;
+            text-align: center;
+            margin-bottom: var(--mb-0-75);
+        }
+
+        .perfil__description{
+            text-align: center;
+            color: var(--body-color);
+            margin-bottom: var(--mb-0-75);
+        }
+
+        .perfil__button a{
+            display: block;
+            margin: auto;
+            text-align: center;
+            max-width: 180px;
         }
 
     }
@@ -1164,8 +1391,7 @@ textarea{
         transform: translateX(-6rem);
     }
     .news__container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
     .services__container {
