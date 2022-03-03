@@ -117,6 +117,7 @@ body{
     background: linear-gradient(0deg, rgb(2, 20, 80) 0%, rgb(126, 202, 247) 30%, rgb(73, 183, 247) 100%);
     background-color: var(--first-color-lighter);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4{
@@ -548,6 +549,124 @@ header.abajo .nav__btns i:hover{
     100%{-webkit-transform: rotate(360deg);}
 }
 
+.nube1{
+    width: 200px;
+    height: 150px;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../Img/nube1.png);
+    animation: flotar1 38s infinite;
+}
+
+@keyframes flotar1 {
+    from{
+        margin-left: 100%;
+    }
+    to {
+        margin-left: -30%;
+    }
+
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nube2{margin-top: 250px;
+    width: 230px;
+    height: 180px;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../Img/nube2.png);
+    animation: flotar2 35s infinite;
+}
+
+@keyframes flotar2 {
+    from{
+        margin-left: -30%;
+    }
+    to {
+        margin-left: 100%;
+    }
+
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nube3{
+    margin-top: 400px;
+    width: 200px;
+    height: 160px;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../Img/nube3.png);
+    animation: flotar3 25s infinite;
+}
+
+@keyframes flotar3 {
+    from{
+        margin-left: 100%;
+    }
+    to {
+        margin-left: -30%;
+    }
+
+    0%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nube4{
+    margin-top: 120px;
+    width: 200px;
+    height: 150px;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../Img/nube4.png);
+    animation: flotar4 18s infinite;
+}
+
+@keyframes flotar4 {
+    from{
+        margin-left: -30%;
+    }
+    to {
+        margin-left: 100%;
+    }
+
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /*==================== SLIDES ====================*/
 
 /* Slideshow container */
@@ -561,7 +680,14 @@ header.abajo .nav__btns i:hover{
 /* Hide the images by default */
 .mySlides {
     display: none;
+
   }
+
+.mySlides img{
+    max-height: 550px;
+    object-fit: cover;
+    padding: 0;
+}
   
   /* Next & previous buttons */
   .prev, .next {
@@ -638,7 +764,6 @@ header.abajo .nav__btns i:hover{
 
 .news__container img{
     width: 100%;
-    border-radius: var(--mb-0-5);
 }
 
 .news__img{
@@ -648,11 +773,35 @@ header.abajo .nav__btns i:hover{
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    background-color: var(--body-color);
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, .2);
+    position: relative;
 }
 
-.news__img:hover {
-    opacity: 0.7;
+.news__img p,
+.news__img h3{
+    padding: 1rem;
 }
+
+.news__img img{
+    max-height: 333px;
+    object-fit: cover;
+}
+
+.news__overlay{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.news__img:hover .news__overlay{
+    opacity: .7;
+}
+
 
 
 /*==================== CONTACT ME ====================*/
@@ -844,13 +993,23 @@ textarea{
 
 /*====================HISTORIA====================*/
 
+.mision__container,
+.vision__container{
+    background-color: var(--body-color);
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, .3);
+    margin-bottom: var(--mb-2);
+    margin-top: var(--mb-3);
+}
+
 .mision__title{
     text-align: center;
+    padding: 2rem;
 }
 
 .mision__content{
-    text-align: center;
-    color: var(--body-color);
+    text-align: left;
+    color: var(--text-color);
+    padding: 1rem;
 }
 
 .mision__img{
@@ -858,13 +1017,14 @@ textarea{
 }
 
 .vision__title{
-    padding-top: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
 .vision__content{
-    text-align: center;
-    color: var(--body-color);
+    text-align: left;
+    color: var(--text-color);
+    padding: 1rem;
 }
 
 .vision__img{
@@ -872,10 +1032,17 @@ textarea{
 }
 
 /*====================TEAM====================*/
+#Team{
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+}
 .team__section h2{
     font-size: var(--big-font-size);
     color: var(--first-color);
     font-weight: lighter;
+    padding-bottom: 3rem;
 }
 .team__section{
     margin-top: var(--mb-2-5) ;
@@ -883,6 +1050,7 @@ textarea{
 .team__container{
     margin-top: var(--mb-1);
     padding-top: 1rem;
+    margin-bottom: var(--mb-3);
 }
 .perfil__title{
     text-align: center;
@@ -894,10 +1062,14 @@ textarea{
 }
 .perfil__description{
     display: flex;
-    min-height: 300px;
+    
     padding: .5rem 1.5rem 1rem 1.5rem;
     margin-bottom: 0;
     align-items: center;
+}
+
+.perfil__button{
+    padding-bottom: 4rem;
 }
 
 
@@ -908,7 +1080,7 @@ textarea{
 }
 
 .img__box{
-    background-color: rgba(100%, 100%, 100%, 0.3);
+    background-color: var(--body-color);
     max-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -992,8 +1164,9 @@ textarea{
     margin: auto;
     position: fixed;
     width: 42px;
-    top: 75px;
+    top: 150px;
     border-radius: 0 25px 25px 0;
+    z-index: 150;
 }
 
 .btn__nav i{
@@ -1074,6 +1247,118 @@ margin-bottom: var(--mb-0-75);
     height: 100%;
 }
 
+/*titeresBocones*/
+
+.titeresBocones h1{
+    text-align: center;
+    font-size: 45px;
+    color: var(--first-color);
+    font-weight: lighter;
+    margin-bottom: var(--mb-1-5);
+}
+
+.titeresBocones__title{
+text-align: center;
+font-weight: lighter;
+font-size: 30px;
+margin-bottom: var(--mb-0-75);
+}
+
+.titeresBocones__description{
+    color: var(--body-color);
+    text-align: center;
+}
+
+.titeresBocones__container{
+    margin-top: var(--mb-2);
+    background-color: var(--body-color);
+    padding-top: var(--mb-1-5);
+    padding-bottom: var(--mb-2);
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, .5);
+    z-index: 10;
+}
+
+.titeresBocones__content-title{
+    padding-bottom: var(--mb-1);
+}
+
+.titeresBocones__content-content{
+    padding-bottom: var(--mb-2);
+}
+.titeresBocones__video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.titeresBocones__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*teatroCalle*/
+
+.teatroCalle h1{
+    text-align: center;
+    font-size: 45px;
+    color: var(--first-color);
+    font-weight: lighter;
+    margin-bottom: var(--mb-1-5);
+}
+
+.teatroCalle__title{
+text-align: center;
+font-weight: lighter;
+font-size: 30px;
+margin-bottom: var(--mb-0-75);
+}
+
+.teatroCalle__description{
+    color: var(--body-color);
+    text-align: center;
+}
+
+.teatroCalle__container{
+    margin-top: var(--mb-2);
+    background-color: var(--body-color);
+    padding-top: var(--mb-1-5);
+    padding-bottom: var(--mb-2);
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, .5);
+    z-index: 10;
+}
+
+.teatroCalle__content-title{
+    padding-bottom: var(--mb-1);
+}
+
+.teatroCalle__content-content{
+    padding-bottom: var(--mb-2);
+}
+.teatroCalle__video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.teatroCalle__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -1101,6 +1386,10 @@ margin-bottom: var(--mb-0-75);
         backface-visibility: visible;
     }
 
+    .mision__container,
+    .vision__container{
+        display: block;
+    }
 
 
 }
@@ -1145,11 +1434,16 @@ margin-bottom: var(--mb-0-75);
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .mision__container,
+    .vision__container{
+        display: block;
+    }
+
     .titeresMesa__content{
         padding: 2rem;
     }
 
-
+  
     .qualification__sections {
         display: grid;
         grid-template-columns: .6fr;
@@ -1157,7 +1451,7 @@ margin-bottom: var(--mb-0-75);
     }
 
     .img__box{
-        background-color: var(--first-color);
+        background-color: var(--body-color);
         max-width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1174,6 +1468,9 @@ margin-bottom: var(--mb-0-75);
         object-fit: contain;
     }
 
+    .mySlides img{
+        max-height: 550px;
+    }
     .team__perfil{
         grid-template-columns: repeat(2, 1fr);
         padding-top: var(--mb-2);
@@ -1233,8 +1530,30 @@ margin-bottom: var(--mb-0-75);
             padding: 0 .5rem;
         }
 
+        .mySlides{
+            padding: 2rem;
+        }
+
+
         .overlay a{
             font-size: 40px;
+        }
+
+        .titeresMesa h1{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .titeresMesa__content,
+        .titeresBocones__content,
+        .teatroCalle__content{
+            padding: 2rem;
+        }
+
+        .titeresMesa__title,
+        .titeresBocones,
+        .teatroCalle{
+            padding-top: 6rem;
         }
 
         .socialMedia{
@@ -1313,7 +1632,9 @@ margin-bottom: var(--mb-0-75);
             justify-content: flex-start;
         }
         
-        .titeresMesa__content-content{
+        .titeresMesa__content-content,
+        .titeresBocones__content-content,
+        .teatroCalle__content-content{
             grid-template-columns: repeat(2, 1fr);
         }
 
@@ -1439,48 +1760,71 @@ margin-bottom: var(--mb-0-75);
         .misionvision__section{
             padding: 2rem;
         }
+
         .mision__container{
-            grid-template-columns: 1fr, 1fr;
+            display: block;
+            background-color: var(--body-color);
+            margin-bottom: var(--mb-2);
         }
 
         .mision__content{
-            grid-template-columns: 1fr, 1fr;
-            text-align: center;
-            color: var(--body-color);
-            max-width: 900px;
+            text-align: left;
+            color: var(--text-color);
+            max-width: 700px;
             margin: auto;
+            padding: 2rem;
         }
 
         .mision__title{
+            padding-top: 0;
+            padding-bottom: var(--mb-3);
             text-align: center;
         }
         
         .mision__img{
-            padding-top: 1rem;
+            padding: 0;
             margin: auto;
-            max-width: 900px;
+            min-width: 500px;
+            max-height: 100%;
         }
 
 
+        .vision__container{
+            display: block;
+            background-color: var(--body-color);
+            margin-bottom: var(--mb-2);
+        }
         .vision__title{
-            padding-top: 1rem;
+            padding-top: 0;
+            padding-bottom: var(--mb-3);
             text-align: center;
         }
 
         .vision__content{
-            text-align: center;
-            color: var(--body-color);
-            max-width: 900px;
+            padding: 2rem;
+            text-align: left;
+            color: var(--text-color);
+            max-width: 700px;
             margin: auto;
         }
 
         .vision__img{
-            padding-top: 1rem;
+            padding: 0;
             margin: auto;
-            max-width: 900px;
+            min-width: 500px;
+        }
+
+
+        .mision__container,
+        .vision__container{
+            display: block;
+            box-shadow: 10px 1px 10px rgba(0, 0, 0, .3);
         }
 
         /*====================TEAM====================*/
+        #Team{
+            margin: auto;
+        }
         .team__section{
             margin-top: var(--mb-2-5);
         }
@@ -1535,8 +1879,7 @@ margin-bottom: var(--mb-0-75);
         }
 
         /*======titeresMesa=======*/
-        .titeresMesa__content-content{
-        }
+
         .titeresMesa__content-content img{
             max-height: 300px;
             margin: auto;
@@ -1601,6 +1944,70 @@ margin-bottom: var(--mb-0-75);
 
     .titeresMesa__content-content img{
         max-height: 300px;
+    }
+
+    .misionvision__section{
+        padding: 2rem;
+    }
+
+    .mision__container{
+        display: flex;
+        background-color: var(--body-color);
+        margin-bottom: var(--mb-2);
+        box-shadow: 10px 1px 10px rgba(0, 0, 0, .3);
+    }
+
+    .mision__content{
+        text-align: left;
+        color: var(--text-color);
+        max-width: 500px;
+        margin: auto;
+        padding: 1rem 2rem;
+    }
+
+    .mision__title{
+        padding-top: 0;
+        padding-bottom: var(--mb-3);
+        text-align: center;
+    }
+    
+    .mision__img{
+        padding: 0;
+        margin: auto;
+        min-width: 500px;
+        max-height: 100%;
+    }
+
+
+    .vision__container{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: var(--body-color);
+        margin-bottom: var(--mb-2);
+        box-shadow: 10px 1px 10px rgba(0, 0, 0, .3);
+    }
+    .vision__title{
+        padding-top: 0;
+        padding-bottom: var(--mb-3);
+        text-align: center;
+    }
+
+    .vision__content{
+        padding: 1rem 2rem;
+        text-align: left;
+        color: var(--text-color);
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .vision__img{
+        padding: 0;
+        margin: auto;
+        min-width: 500px;
+    }
+
+    #Team{
+        margin: auto;
     }
 
 

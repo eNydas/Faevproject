@@ -13,9 +13,6 @@
     display: none;
   }
 
-  .mySlides:hover{
-    opacity: .8;
-  }
 
   
   /* Add a pointer when hovering over the thumbnail images */
