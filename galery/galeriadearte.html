@@ -12,6 +12,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/galleries.css">
 
         <title>FAEV</title>
     </head>
@@ -30,24 +31,19 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="../aboutus/historia.html" class="nav__link">
                                 <i class="uil uil-user nav__icon"></i>Acerca de nosotros 
                             </a>
-                            <div class="nav__content">
-                                <a href="../aboutus/historia.html">Vision Mision</a>
-                                <a href="../aboutus/team.html">Equipo de trabajo</a>
-                                <a href="../aboutus/contactanos.html">Contactanos</a>
-                            </div>
                         </li>
                         <li class="nav__item">
                             <a href="#programs" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i>Programas
                             </a>
                             <div class="nav__content">
-                                <a href="../programs/teatro.html">Teatro</a>
-                                <a href="../programs/dibujo.html">Dibujo</a>
-                                <a href="../programs/musica.html">Musica</a>
-                                <a href="../programs/medioambiente.html">Medio Ambiente</a>
+                                <a href="artesescenicas.html">Artes escénicas</a>
+                                <a href="dibujo.html">Dibujo</a>
+                                <a href="musica.html">Musica</a>
+                                <a href="medioambiente.html">Medio Ambiente</a>
                             </div>
                         </li>
                         <li class="nav__item">
@@ -55,9 +51,9 @@
                                 <i class="uil uil-briefcase-alt nav__icon"></i>Servicios
                             </a>
                             <div class="nav__content">
-                                <a href="../services/projetcs.html">Proyectos</a>
-                                <a href="../services/calendar.html">Calendario</a>
-                                <a href="../services/testimonios.html">Testimonios</a>
+                                <a href="">Proyectos</a>
+                                <a href="">Calendario</a>
+                                <a href="">Testimonios</a>
                             </div>
                         </li>
                         <li class="nav__item">
@@ -65,13 +61,13 @@
                                 <i class="uil uil-scenery nav__icon"></i>Galeria Faev 
                             </a>
                             <div class="nav__content">
-                                <a href="salaFaev.html">Sala Faev(Teatro)</a>
-                                <a href="galeriadearte.html">Galeria de arte</a>
-                                <a href="otros.html">Otros</a>
+                                <a href="">Sala Faev(artesescenicas.html)</a>
+                                <a href="">Galeria de arte</a>
+                                <a href="">Otros</a>
                             </div>
                         </li>
                         <li class="nav__item">
-                            <a href="../articulacion/articulacion.html" class="nav__link">
+                            <a href="#articulacion" class="nav__link">
                                 <i class="uil uil-message nav__icon"></i>Articulación
                             </a>
                         </li>
@@ -94,6 +90,19 @@
         </header>
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="uil uil-times-circle"></i></a>
+
+                <div class="overlay-content">
+                    <a href="#titeresMesa" onclick="closeNav()">Titeres de Mesa</a>
+                    <a href="#titeresBocones" onclick="closeNav()">Titeres Bocones</a>
+                    <a href="#teatroCalle" onclick="closeNav()">Teatro de calle</a>
+                </div>
+            </div>
+            <div class="btn__nav">
+                <a href="#altNavbtn" class="btn" onclick="openNav()"><i class="uil uil-plus-circle btn"></i></a>
+            </div>
+            
             <div class="home__title-content">
                 <div class="home__title-container">
                     <h2 class="home__title container">F.A.E.V</h2>
@@ -103,6 +112,19 @@
                 </div>
             </div>
         </section>
+        <!--======================MAIN======================-->
+        <main class="main">
+            <!--====================SUN=========================-->
+            <div class="sun">
+                <img src="../assets/Img/Sol Faev.png" alt="">
+            </div>
+            <!--====================clouds=====================-->
+            <div class="nube1"></div>
+            <div class="nube2"></div>
+            <div class="nube3"></div>
+            <div class="nube4"></div>
+            
+        </main>
         <!--==================== Footer ====================-->
         <footer class="footer__section">
             <div class="footer__container footer__grid container">
@@ -146,14 +168,17 @@
                     <li class="legal">
                         <h3>Equipo de trabajo</h3>
                         <ul class="box">
-                            <li><a href="">Daniel Salazar</a></li>
-                            <li><a href="">Bribitte Barrera</a></li>
-                            <li><a href="">Astrid Gutierrez</a></li>
-                            <li><a href="">Luisa</a></li>
-                            <li><a href="">Donny Cuervo</a></li>
+                            <li><a href="#Daniel_Salazar">Daniel Salazar</a></li>
+                            <li><a href="#Brigitte_Barrera">Brigitte Barrera</a></li>
+                            <li><a href="#Astrid_Gutierrez">Astrid Gutierrez</a></li>
+                            <li><a href="#Luisa_Vasquez">Luisa Vasquez</a></li>
+                            <li><a href="#Donny_Cuervo">Donny Cuervo Barón</a></li>
+                            <li><a href="#Angie_Fernandez">Angie Fernandez</a></li>
+                            <li><a href="#Dany_Vargas">Dany Vargas Estrada</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </footer>
-    </body>    
+        <script src="../assets/js/main.js"></script>
+    </body>

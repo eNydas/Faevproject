@@ -248,6 +248,8 @@ i .uil-heart-alt {
     transition: 0.4s;
 }
 
+/*==================== HEADER ABAJO ====================*/
+
 header.abajo ul li a,
 header.abajo .nav__donate,
 header.abajo .nav__btns{
@@ -284,6 +286,7 @@ header.abajo .nav__btns i:hover{
     transition: .4s;
 }
 
+/*==================== MEDIA QUERY PARA NAV EN MOVIL ====================*/
 
 @media screen and (max-width: 767px){
     .nav__menu{
@@ -1193,6 +1196,9 @@ textarea{
     }
 
 }
+
+/*==================== ARTES ESCENICAS ====================*/
+
 /* titeresMesa*/
 .titeresMesa h1{
     text-align: center;
@@ -1286,12 +1292,14 @@ margin-bottom: var(--mb-0-75);
     padding-bottom: var(--mb-2);
 }
 .titeresBocones__video{
-    position: relative;
+    max-height: 500px;
     overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
+    object-fit: cover;
 }
 
+.titeresBocones__video img{
+    margin: auto;
+}
 .titeresBocones__video iframe{
     position: absolute;
     top: 0;
@@ -1393,7 +1401,7 @@ margin-bottom: var(--mb-0-75);
 
 
 }
-
+/*========================================*/
 /* For medium devices */
 @media screen and (min-width: 568px) {
 
@@ -1443,13 +1451,6 @@ margin-bottom: var(--mb-0-75);
         padding: 2rem;
     }
 
-  
-    .qualification__sections {
-        display: grid;
-        grid-template-columns: .6fr;
-        justify-content: center;
-    }
-
     .img__box{
         background-color: var(--body-color);
         max-width: 100%;
@@ -1479,6 +1480,9 @@ margin-bottom: var(--mb-0-75);
     .footer__links{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /*========================================*/
+
     @media screen and (min-width: 768px) {
         .container {
             margin-left: auto;
@@ -1888,7 +1892,10 @@ margin-bottom: var(--mb-0-75);
     }
 }
 
+/*========================================*/
+
 /* For large devices */
+
 @media screen and (min-width: 1024px) {
 
     .header{
@@ -1913,24 +1920,7 @@ margin-bottom: var(--mb-0-75);
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    .services__container {
-        grid-template-columns: repeat(3, 238px);
-    }
-    .portfolio__content {
-        column-gap: 5rem;
-    }
-    .swiper-portfolio-icon {
-        font-size: 3.5rem;
-    }
-    .swiper-button-prev {
-        left: 3.5rem;
-    }
-    .swiper-button-next {
-        right: 3.5rem;
-    }
-    .swiper-container-horizontal > .swiper-pagination-bullets {
-        bottom: -4.5rem
-    }
+
     .contact__form,
     .contact__information{
         grid-template-columns: 1fr, 1fr;
