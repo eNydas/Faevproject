@@ -872,6 +872,48 @@ textarea{
     resize: none;
 }
 
+/*====================DONACIONES PAGE============*/
+.donaciones__container h3{
+    padding: 1rem;
+}
+.donaciones__title{
+    text-align: center;
+    font-size: 1.75rem;
+    color: black;
+    font-weight: lighter;
+}
+.donaciones__content{
+    background-color: var(--body-color);
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, .5);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.donaciones__info p{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+.donaciones__info img{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+.donaciones__img{
+    padding-top: 3rem;
+}
+.donaciones__img img{
+    position: relative;
+    display: block;
+}
+
+
 /*==================== FOOTER ====================*/
 
 .footer__section{
@@ -1469,6 +1511,13 @@ margin-bottom: var(--mb-0-75);
         object-fit: contain;
     }
 
+    .donaciones__img{
+        max-width: 300px;
+        display: block;
+        margin: auto 0px auto auto;
+        position: relative;
+    }
+
     .mySlides img{
         max-height: 550px;
     }
@@ -1889,6 +1938,38 @@ margin-bottom: var(--mb-0-75);
             margin: auto;
         }
 
+        /*====================DONACIONES PAGE============*/
+
+        .donaciones__grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .donaciones__info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+        .donaciones__info p{
+            margin: auto 20px auto auto;
+            text-align: end;
+            padding: 0px;
+            font-size-adjust: initial;
+        }
+        .donaciones__info img{
+            margin: auto auto auto 0px;
+            align-items: flex-start;
+        }
+
+        .donaciones__img{
+            max-width: 400px;
+            display: flex;
+            margin: auto;
+            padding-top: 0px;
+        }
     }
 }
 
