@@ -876,12 +876,21 @@ textarea{
 .donaciones__container h3{
     padding: 1rem;
 }
+
 .donaciones__title{
     text-align: center;
     font-size: 1.75rem;
     color: black;
     font-weight: lighter;
 }
+.paypal-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+
 .donaciones__content{
     background-color: var(--body-color);
     box-shadow: 10px 1px 10px rgba(0, 0, 0, .5);

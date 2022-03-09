@@ -324,7 +324,7 @@
                     <span class="perfil__subtitle">Diseñador y Fotografo</span> 
                     <div class="team__perfil grid">
                         <div class="img__box">
-                            <img src="../assets/Img/aboutus/Dany Vargas.png" alt="Dany Herseeg Vargas Estrada" class="perfil__img">
+                            <img src="../assets/Img/aboutus/Dany-Vargas.png" alt="Dany Herseeg Vargas Estrada" class="perfil__img">
                         </div>
                         <div class="perfil__data">
                             <p class="perfil__description">
@@ -340,67 +340,75 @@
                 </div>
             </section>
             <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+            <section class="contac__section" id="contact">
                 <h2 class="section__title">Contactanos</h2>
-                <span class="section__subtitle">se parte de nuestro equipo de trabajo</span>
-
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone-alt contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Telefono</h3>
-                                <span class="contatc__subtitle">(60) 300 876 89 30</span>
+                <span class="section__subtitle">Dejanos saber mas de ti</span>
+                    <div class="contact__grid grid container">
+                        <form action="../enviar.php" class="contact__form">
+                            <div class="contact__inputs grid">
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Nombre</label>
+                                    <input type="text" name="nombre" class="contact__input">
+                                </div>
+    
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">E-mail</label>
+                                    <input type="email" name="email" class="contact__input">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">E-mail</h3>
-                                <span class="contatc__subtitle">danyvargase@gmail.com</span>
+    
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Proyecto</label>
+                                <input type="text" name="telefono" class="contact__input">
                             </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Ubicacion</h3>
-                                <span class="contatc__subtitle">Bogotá, Colombia</span>
+    
+                            <div class="contact__content">
+                                <label for="" class="contact__label mensaje">Mensaje</label>
+                                <textarea name="mensaje" id="" cols="0" rows="7" class="contact__input"></textarea>
                             </div>
+    
+                            <div class="submit__btn">
+                                <input type="submit" class="button__icon button button--flex">
+                            </div>
+                        </form>
+                        <div class="contact__container">
+                            <div class=".">
+                                <div class="contact__information">
+                                    <i class="uil uil-phone-alt contact__icon"></i>
+                                    <div>
+                                        <h3 class="contact__title">Telefono</h3>
+                                        <span class="contact__subtitle">(57)319 6815332</span>
+                                    </div>
+                                </div>
+        
+                                <div class="contact__information">
+                                    <i class="uil uil-envelope contact__icon"></i>
+        
+                                    <div>
+                                        <h3 class="contact__title">E-mail</h3>
+                                        <span class="contact__subtitle">Arteeducacionparalavida@gmail.com</span>
+                                    </div>
+                                </div>
+        
+                                <div class="contact__information">
+                                    <i class="uil uil-map-marker contact__icon"></i>
+        
+                                    <div>
+                                        <h3 class="contact__title">Ubicacion</h3>
+                                        <span class="contact__subtitle">Bogotá, Colombia</span>
+                                    </div>
+                                </div>
+                            </div>
+        
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Nombre</label>
-                                <input type="text" class="contact__input">
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">E-mail</label>
-                                <input type="email" class="contact__input">
-                            </div>
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Proyecto</label>
-                            <input type="text" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div class="submit__btn">
-                            <input type="submit" class="button__icon button button--flex">
-                        </div>
-                    </form>
+                <div class="whatsapp__btn grid">
+                    <a class="whatsapp__logo" href="https://wa.me/573008768930" target="_blank">
+                        <img src="/assets/Img/whatsapp.svg" alt="whatsapp">
+                    </a>
                 </div>
+
             </section>
         </main>
 

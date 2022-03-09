@@ -81,9 +81,32 @@
             </div>
             <!--=====================INFO DONACIONES===========-->
             <section class="donaciones section">
+                
+                    
                 <div class="donaciones__container">
                     <h3 class="donaciones__title container">
-                        Puedes hacer tus donaciones por medio de...
+                        Puedes hacer tus donaciones por medio de PAYPAL...
+                    </h3>
+                    <div class="paypal-btn">
+                        <div id="donate-button-container">
+                            <div id="donate-button"></div>
+                            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                            <script>
+                                PayPal.Donation.Button({
+                                env:'production',
+                                hosted_button_id:'V9H9TNF4JLE9L',
+                                image: {
+                                src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                                alt:'Donate with PayPal button',
+                                title:'PayPal - The safer, easier way to pay online!',
+                                }
+                                }).render('#donate-button');
+                            </script>
+                        </div>
+                            
+                    </div>
+                    <h3 class="donaciones__title container">
+                        ..o si puedes tambien por...
                     </h3>
                     <div class="donaciones__content">
                         <div class="donaciones__grid">
