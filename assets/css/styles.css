@@ -473,6 +473,20 @@ header.abajo .nav__btns i:hover{
 
 /*==================== HOME ====================*/
 
+.cabecera{
+    background-color: var(--body-color);
+    margin-top: 2rem;
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.home__title-seo{
+    padding: 2rem;
+}
+
+.home__content-seo{
+    padding: 0 4rem 4rem 4rem;
+    color: var(--text-color);
+}
 .home{
     padding-top: 0;
 }
