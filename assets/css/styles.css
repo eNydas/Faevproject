@@ -1483,6 +1483,20 @@ margin-bottom: var(--mb-0-75);
         order: 1;
         justify-self: center;
     }
+    .cabecera{
+        background-color: var(--body-color);
+        margin-top: 3rem;
+        box-shadow: 10px 1px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .home__title-seo{
+        padding: 2rem;
+    }
+    
+    .home__content-seo{
+        padding: 0 4rem 4rem 4rem;
+        color: var(--text-color);
+    }
     .news__container{
         display: grid;
         grid-template-columns: 1fr;
@@ -1676,7 +1690,20 @@ margin-bottom: var(--mb-0-75);
         .nav__donations2{
             display: none;
         }
-
+        .cabecera{
+            background-color: var(--body-color);
+            margin-top: 3rem;
+            box-shadow: 10px 1px 10px rgba(0, 0, 0, .2);
+        }
+        
+        .home__title-seo{
+            padding: 2rem;
+        }
+        
+        .home__content-seo{
+            padding: 0 4rem 4rem 4rem;
+            color: var(--text-color);
+        }
         .home__content {
             padding: 0rem 0.5rem;
         }
