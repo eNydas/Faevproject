@@ -1,5 +1,6 @@
 
-/*document.addEventListener('DOMContentLoaded', function(){
+/*
+document.addEventListener('DOMContentLoaded', function(){
     let imagenes = [
         {img: '../../assets/img/galleriesSurces/conversatorio.jpeg'},
         {img: '../../assets/img/galleriesSurces/conversatorio2.jpeg'},
