@@ -44,24 +44,24 @@ document.addEventListener('DOMContentLoaded', function(){
     const img__lightbox = document.querySelector('.gallery__lightbox img')
 
     contenedor.addEventListener('click', function (event){
-        let atras = contenedor.querySelector('.atras-btn'),
-            adelante = contenedor.querySelector('.adelante-btn'),
-            img = contenedor.querySelector('img'),
+        let atras = contenedor.querySelector('.atras-btn')
+            adelante = contenedor.querySelector('.adelante-btn')
+            img = contenedor.querySelector('img')
             tgt = event.target
         if (tgt == atras){
             if (contador > 0){
                 img.src = imagenes[contador - 1].img,
                 contador --
             }else{
-                img.src = imagenes[imagenes.length-1].img,
+                img.src = imagenes[imagenes.length-1].img
                 contador = imagenes.length - 1
             }
         } else if (tgt == adelante) {
             if(contador < imagenes.length - 1){
-                img.src = imagenes[contador + 1].img,
+                img.src = imagenes[contador + 1].img
                 contador++
             }else {
-                img.src = imagenes[0].img,
+                img.src = imagenes[0].img
                 contador = 0
             }
         }
