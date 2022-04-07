@@ -572,7 +572,7 @@ header.abajo .nav__btns i:hover{
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
-    background-image: url(../Img/nube1.png);
+    background-image: url(../img/nube1.png);
     animation: flotar1 38s infinite;
 }
 
@@ -601,7 +601,7 @@ header.abajo .nav__btns i:hover{
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
-    background-image: url(../Img/nube2.png);
+    background-image: url(../img/nube2.png);
     animation: flotar2 35s infinite;
 }
 
@@ -631,7 +631,7 @@ header.abajo .nav__btns i:hover{
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
-    background-image: url(../Img/nube3.png);
+    background-image: url(../img/nube3.png);
     animation: flotar3 25s infinite;
 }
 
@@ -661,7 +661,7 @@ header.abajo .nav__btns i:hover{
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
-    background-image: url(../Img/nube4.png);
+    background-image: url(../img/nube4.png);
     animation: flotar4 18s infinite;
 }
 
