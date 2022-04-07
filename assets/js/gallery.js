@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     let imagenes = [
-        {img: '../assets/img/Galleries surces/conversatorio.jpeg'},
+        {img: '../../assets/img/Galleries surces/conversatorio.jpeg'},
         {img: '../assets/img/Galleries surces/conversatorio2.jpeg'},
         {img: '../assets/img/Galleries surces/conversatorio3.jpeg'},
         {img: '../assets/img/Galleries surces/conversatorio4.jpeg'},
@@ -50,18 +50,18 @@ document.addEventListener('DOMContentLoaded', function(){
             tgt = event.target
         if (tgt == atras){
             if (contador > 0){
-                img.src = imagenes[contador - 1].img
+                img.src = imagenes[contador - 1].img,
                 contador --
             }else{
-                img.src = imagenes[imagenes.length-1].img
+                img.src = imagenes[imagenes.length-1].img,
                 contador = imagenes.length - 1
             }
         } else if (tgt == adelante) {
             if(contador < imagenes.length - 1){
-                img.src = imagenes[contador + 1].img
+                img.src = imagenes[contador + 1].img,
                 contador++
             }else {
-                img.src = imagenes[0].img
+                img.src = imagenes[0].img,
                 contador = 0
             }
         }
