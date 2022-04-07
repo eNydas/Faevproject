@@ -475,7 +475,7 @@ header.abajo .nav__btns i:hover{
 
 .cabecera{
     background-color: var(--body-color);
-    margin-top: 2rem;
+    margin-top: 3rem;
     box-shadow: 10px 1px 10px rgba(0, 0, 0, .2);
 }
 
