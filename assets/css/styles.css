@@ -945,7 +945,7 @@ textarea{
 }
 
 .footer__section{
-    background-image: url(../../assets/img/paisaje_1.svg);
+    background-image: url(../img/paisaje_1.png);
     background-size: cover;
     display: grid;
     padding-top: 4rem;
