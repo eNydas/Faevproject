@@ -1483,6 +1483,7 @@ margin-bottom: var(--mb-0-75);
         order: 1;
         justify-self: center;
     }
+    
     .cabecera{
         background-color: var(--body-color);
         margin-top: 3rem;
