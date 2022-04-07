@@ -40,13 +40,21 @@
         height: 100vh;
         background-color: rgba(0, 0, 0, .9);
         z-index: 200;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         transition: all .7s ease;
         visibility: hidden;
         opacity: 0;
 }
+
+.gallery__overlay.activo{
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
+    }
 .gallery__overlay .gallery__lightbox{
         width: 90%;
         height: 90%;

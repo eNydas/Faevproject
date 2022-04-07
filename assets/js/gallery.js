@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function(){
+/*document.addEventListener('DOMContentLoaded', function(){
     let imagenes = [
         {img: '../../assets/img/galleriesSurces/conversatorio.jpeg'},
         {img: '../../assets/img/galleriesSurces/conversatorio2.jpeg'},
@@ -84,4 +84,24 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
 })
+*/
 
+const enlace = document.querySelectorAll( '.columna .a')
+const lightbox = document.querySelector('.gallery__lightbox')
+const grande = document.querySelector('.lightbox__img')
+const cerrar = document.querySelector('.close__lightbox')
+
+enlaces.forEach(( cadaEnlace , i )=>{
+    enlaces[i].addEventListener('click', ( e )=>{
+        e.preventDefault()
+        let img = cadaEnlace.querySelector('.img').src
+        console.log( img ) 
+        lightbox.classList.add('activo')
+        grande.setAttribute('src', img)
+
+    })
+})
+
+cerrar.addEventListener('click', ()=>{
+    lightbox.classList.remove('activo')
+})

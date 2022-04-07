@@ -572,7 +572,7 @@ header.abajo .nav__btns i:hover{
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
-    background-image: url(../img/nube1.png);
+    background-image: url(../img/nube1);
     animation: flotar1 38s infinite;
 }
 
@@ -945,7 +945,7 @@ textarea{
 }
 
 .footer__section{
-    background-image: url(/assets/img/paisaje_.svg);
+    background-image: url(../img/paisaje_1.svg);
     background-size: cover;
     display: grid;
     padding-top: 4rem;
