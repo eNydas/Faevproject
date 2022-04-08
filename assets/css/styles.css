@@ -944,13 +944,17 @@ textarea{
     color: #fff;
 }
 
+
 .footer__section{
-    background-image: url(../../assets/img/paisaje_1.svg);
     background-size: cover;
     display: grid;
     padding-top: 4rem;
-    z-index: 200;
 }
+
+.footer__section{
+    background-image: url(/assets/img/paisaje_1.svg);
+}
+
 
 .footer__container{
     margin: auto;
@@ -1792,7 +1796,7 @@ margin-bottom: var(--mb-0-75);
         }
 
         .footer__section{
-            background-image: url(/assets/Img/Paisaje.svg);
+            background-image: url(/assets/img/paisaje_1.svg);
             padding: 4rem 0 0rem 0;
             display: grid;
             background-size: cover;
