@@ -1,3 +1,4 @@
+'use strict'
 const enlace = document.querySelectorAll('.a')
 const lightbox = document.querySelector('.gallery__overlay')
 const grande = document.querySelector('.grande')
