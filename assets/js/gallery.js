@@ -1,4 +1,4 @@
-const enlace = document.querySelectorAll( '.columna .a')
+const enlace = document.querySelectorAll('.a')
 const lightbox = document.querySelector('.gallery__overlay')
 const grande = document.querySelector('.grande')
 const cerrar = document.querySelector('.close__lightbox')
