@@ -25,7 +25,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="../index.html" class="nav__logo">
-                    <h1><img src="/assets/Img/Faev logo.png" alt=""></h1></a>
+                    <h1><img src="/assets/img/faev-logo.png" alt=""></h1></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -108,11 +108,50 @@
                 </div>
             </div>
         </section>
+        <!--==================== Tabla de info====================-->
+        <section class="contac__section">
+            <div class="contact__grid grid container">
+                <form action="" class="contact__form">
+                    <h2 class="section__title">Formulario de inscripción</h2>
+                    <div class="contact__content">
+                        <label for="cliente" class="contact__label">Nombre completo</label>
+                        <input id="cliente" type="text" class="contact__input" required/>
+                    </div>
+                    <div class="contact__content">
+                        <label for="edad" class="contact__label">Edad</label>
+                        <input id="edad" type="number" class="contact__input" required/>
+                    </div>
+                    <div class="contact__content">
+                        <label for="servicio" class="contact__label">Programa artistico de interes</label>
+                        <select id="servicio" name="listaservicios" class="contact__input" required>
+                            <option>Batucada</option>
+                            <option>Teatro  </option>
+                            <option>Dibujo  </option>
+                            <option>Pintura </option>
+                            <option>Circo   </option>
+                        </select>
+                    </div>
+                    <div class="contact__content">
+                        <label for="telefono" class="contact__label">Telefono</label>
+                        <input id="telefono" type="tel" class="contact__input" required size="10"/>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">E-mail</label>
+                        <input id="email" type="email" name="email" class="contact__input" required>
+                    </div>
+                    <div class="submit__bnt">
+                        <button id="submit" class="button__icon button formulario__submit">Enviar</button>
+                    </div>
+                    <div id="respuesta"></div>
+                </form>
+            </div>
+        </section>
+        
         <!--==================== Footer ====================-->
         <footer class="footer__section">
             <div class="footer__container footer__grid container">
                 <div>
-                    <img class="footer__logo" src="/assets/Img/Faev logo.png" alt="">
+                    <img class="footer__logo" src="../assets/img/faev-logo.png" alt="">
                 </div>
                 <div class="footer__description">
                     <span>FUNDACION ARTE EDUCACION PARA LA VIDA</span>
@@ -168,4 +207,5 @@
                 <h1 class="footer__end">FAEV Arte Educación para la Vida <br> Todos los derechos reservados 2022® Pagina creada por Dany Vargas Estrada, contacto; tel:3008768930, email: danyvargase@gmail.com</h1>
             </div>
         </footer>
+        <script src="../assets/js/main.js"></script>
     </body>    
