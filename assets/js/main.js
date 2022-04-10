@@ -105,45 +105,5 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-// Formularios de inscripcion
 
-document.querySelector("#submit").addEventListener("click", () => {
-    e.preventDefault();
-  
-    //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-    let telefono = "573008768930";
-  
-    let cliente = document.querySelector("#cliente").value;
-    let edad = document.querySelector("#edad").value;
-    let servicio = document.querySelector("#servicio").value;
-    let telefonoAspirante = document.querySelector('#telefono').value;
-    let email = document-querySelector('#email').value;
-  
-    resp.classList.remove("fail");
-    resp.classList.remove("send");
-  
-    let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-          *Fundacion FAEV*%0A
-          *interesado en el curso*%0A%0A
-          *nombre:*%0A
-          ${cliente}%0A
-          *edad:*%0A
-          ${edad}%0A
-          *curso de interes*%0A
-          ${servicio}%0A
-          *telefono*%0A
-          ${telefonoAspirante}%0A
-          *correo*%0A
-          ${email}`;
-  
-    if (cliente === "" || edad === "" || telefonoAspirante === "") {
-      resp.classList.add("fail");
-      resp.innerHTML = `Faltan algunos datos, ${cliente}`;
-      return false;
-      }
-    resp.classList.remove("fail");
-    resp.classList.add("send");
-    resp.innerHTML = `Se ha enviado tu solicitud de inscripción, ${cliente}`;
-    window.open(url);
-  });
   
