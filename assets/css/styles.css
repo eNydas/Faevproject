@@ -1,6 +1,13 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan:wght@400;500;600&display=swap');
 
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  }
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height:4.5rem;
@@ -22,7 +29,7 @@
     --container-color: #fff;
     --second-color:hsl(var(--hue-color-alt),65%, 61%);
     /*========== Font and typography ==========*/
-    --title-font: 'Permanent Marker', cursive;
+    --title-font: 'Permanent Marker';
     --text-font: 'Spartan', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
