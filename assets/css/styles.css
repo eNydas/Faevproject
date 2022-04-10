@@ -734,7 +734,8 @@ header.abajo .nav__btns i:hover{
 /* Slideshow container */
 .slideshow-container {
     padding-top: 2rem;
-    max-width: 1200px;
+    max-width: 1000px;
+    max-height: 700px;
     position: relative;
     margin: auto;
   }
