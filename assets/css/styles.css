@@ -1,13 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan:wght@400;500;600&display=swap');
 
-@font-face {
-    font-family: 'Permanent Marker';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
-    font-display: swap;
-  }
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height:4.5rem;
