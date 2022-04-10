@@ -107,7 +107,7 @@ function closeNav() {
 
 // Formularios de inscripcion
 
-document.querySelector("#submit").addEventListener("click", e => {
+document.querySelector("#submit").addEventListener("click", () => {
     e.preventDefault();
   
     //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
