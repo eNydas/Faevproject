@@ -1,5 +1,8 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan:wght@400;500;600&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
 
 /*==================== VARIABLES CSS ====================*/
 :root {
