@@ -850,6 +850,7 @@ header.abajo .nav__btns i:hover{
 }
 
 .news__img img{
+    width: 333px;
     max-height: 333px;
     object-fit: cover;
 }
