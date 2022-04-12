@@ -22,12 +22,12 @@ if(navToggle){
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
-    navClose.addEventListener('click', {passive: true}, ()=>{
+    navClose.addEventListener('click', ()=>{
         navMenu.classList.remove('show-menu')
     })
 }
 
-window.addEventListener("scroll", {passive: true}, function(){
+window.addEventListener("scroll", function(){
     var showMenu = document.querySelector("div.show-menu");
     showMenu.classList.toggle("down", window.scrollY>50)
 })
