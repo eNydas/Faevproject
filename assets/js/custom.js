@@ -1,5 +1,5 @@
 window.onload = function(){
-    $('#preloader').fadeOut(100);
+    $('#preloader').fadeOut(200);
     $('preloader').add('preloader__hidden');
-}
+ }
 
