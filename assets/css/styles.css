@@ -295,6 +295,7 @@ span{
 .section__title{
     font-size: var(--h1-font-size);
     margin-top: var(--mb-0-5);
+    padding-bottom: var(--mb-1);
 }
 
 .section__subtitle{
@@ -309,51 +310,6 @@ span{
 .section__subtitle{
     text-align: center;
 }
-
-
-.containerImg {
-    position: relative;
-    width: 100%;
-}
-  
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-  
-.overlayImg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .3s ease;
-    background-color: rgba(0, 0, 0, .4);
-}
-  
-.containerImg:hover .overlayImg {
-    opacity: 1;
-}
-  
-.textInfo {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.textInfo a{
-    color: #fff;
-}
-  
 
 /*==================== LAYOUT ====================*/
 .container{
@@ -490,7 +446,7 @@ header.abajo .nav__btns i:hover{
         background-color: var(--first-color);
     }
     .down i{
-        color: rgb(223, 223, 223);
+        color: var(--hue-color-alt);
     }
     div.show-menu .down i:hover {
         color: var(--text-color);
@@ -1170,6 +1126,8 @@ textarea{
     color: var(--body-color);
     text-align: center;
     padding: 0 2rem;
+    font-weight: var(--font-weight-1);
+    font-family: var(--text-font);
 }
 
 .footer__links h3{
@@ -1465,6 +1423,84 @@ textarea{
 }
 
 /*==================== ARTES ESCENICAS ====================*/
+
+
+.programs__section h1{
+    text-align: center;
+    font-size: 45px;
+    color: var(--first-color);
+    font-weight: lighter;
+    margin-bottom: var(--mb-1-5);
+}
+.programs__description{
+    color: var(--body-color);
+    font-weight: var(--font-weight-2);
+    font-size: 18px;
+    padding: 2rem;
+}
+
+.programs__card{
+    margin-top: var(--mb-2);
+    background-color: var(--body-color);
+    padding-top: var(--mb-1-5);
+    padding-bottom: var(--mb-2);
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, .5);
+    z-index: 10;
+}
+
+.programs__content p{
+    padding: 2rem;
+    font-size: 16px;
+}
+
+.programs__content img {
+    padding-right: 2rem;
+}
+
+.container__img {
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, .4);
+}
+  
+.container__img:hover .overlay__img {
+    opacity: 1;
+}
+  
+.textInfo {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.textInfo a{
+    color: #fff;
+}
+
 
 /* titeresMesa*/
 .titeresMesa h1{
@@ -1943,6 +1979,7 @@ margin-bottom: var(--mb-0-75);
             justify-content: flex-start;
         }
         
+        .programs__content,
         .titeresMesa__content-content,
         .titeresBocones__content-content,
         .teatroCalle__content-content{
@@ -2017,20 +2054,21 @@ margin-bottom: var(--mb-0-75);
         .footer__container span{
             color: var(--first-color);
             padding-bottom: 0rem;
-
+            font-family: var(--title-font);
         }
         .footer__container p{
             color: var(--body-color);
             padding-top: 1rem;
-            font-size: 15px;
-            font-weight: bold;
+            font-size: 18px;
             max-width: 900px;
+            font-weight: var(--font-weight-1);
+            font-family: var(--text-font);
         }
         .footer__description{
             text-align: center;
             justify-content: center;
             margin: auto;
-            background-color: rgba(0, 0, 0, 0.281);
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 1rem;
         }
         .footer__container span, p{
@@ -2056,8 +2094,8 @@ margin-bottom: var(--mb-0-75);
 
         .footer__links a{
             color: var(--body-color);
-            font-size: 15px;
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: var(--font-weight-2);
         }
         .footer__end{
             display: block;
@@ -2244,7 +2282,7 @@ margin-bottom: var(--mb-0-75);
             z-index: -1;
             height: 300px;
             width: 300px;
-            top: 40%;
+            top: 20%;
             left: 10%;
             -webkit-animation: spin 25s linear infinite;
             -moz-animation: spin 25s linear infinite;
@@ -2371,7 +2409,7 @@ margin-bottom: var(--mb-0-75);
         z-index: -1;
         height: 300px;
         width: 300px;
-        top: 40%;
+        top: 20%;
         left: 10%;
         -webkit-animation: spin 25s linear infinite;
         -moz-animation: spin 25s linear infinite;
