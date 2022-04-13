@@ -3,7 +3,7 @@
     "short_name": "FAEV",
     "description": "La FUNDACIÓN ARTE EDUCACIÓN PARA LA VIDA (FAEV) busca contribuir a la educación comunitaria",
     "background_color": "#fff",
-    "theme_color": "#F0DB4F",
+    "theme_color": "#FD8D16",
     "orientation": "portrait",
     "display": "standalone",
     "id":"/?utm_source=web_app_manifest",

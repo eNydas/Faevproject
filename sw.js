@@ -1,12 +1,19 @@
 ;
 //asignar un nombre y versión al cache
-const CACHE_NAME = 'v.1.0.0',
+const CACHE_NAME = 'v.1.0.1',
   urlsToCache = [
     './',
     '/index.html',
     '/assets/css/styles.css',
+    '/assets/css/donaciones.css',
+    '/assets/css/galeria.css',
     '/assets/js/main.js',
     '/assets/js/scriptsw.js',
+    '/assets/js/gallery.js',
+    '/assets/js/main2.js',
+    '/assets/js/custom.js',
+    '/assets/js/menuAlt.js',
+    '/assets/js/slide.js',
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
