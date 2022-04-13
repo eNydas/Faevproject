@@ -10,6 +10,7 @@
          url('../fonts/permanent-marker-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/permanent-marker-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/permanent-marker-v10-latin-regular.svg#PermanentMarker') format('svg'); /* Legacy iOS */
+    font-display: swap;
   }
 
 /* league-spartan-100 - latin */
@@ -24,7 +25,8 @@
          url('../fonts/league-spartan-v4-latin-100.woff') format('woff'), /* Modern Browsers */
          url('../fonts/league-spartan-v4-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/league-spartan-v4-latin-100.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
-  }
+    font-display: swap;
+}
   /* league-spartan-300 - latin */
   @font-face {
     font-family: 'League Spartan';
@@ -50,6 +52,7 @@
          url('../fonts/league-spartan-v4-latin-200.woff') format('woff'), /* Modern Browsers */
          url('../fonts/league-spartan-v4-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/league-spartan-v4-latin-200.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
+    font-display: swap;
   }
   /* league-spartan-regular - latin */
   @font-face {
@@ -63,6 +66,7 @@
          url('../fonts/league-spartan-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/league-spartan-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/league-spartan-v4-latin-regular.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
+    font-display: swap;
   }
   /* league-spartan-500 - latin */
   @font-face {
@@ -150,7 +154,7 @@
     --container-color: #fff;
     --second-color:hsl(var(--hue-color-alt),65%, 61%);
     /*========== Font and typography ==========*/
-    --title-font: 'Permanent Marker', cursive;
+    --title-font: 'Permanent Marker';
     --text-font: 'League Spartan', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -165,7 +169,15 @@
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-
+    --font-weight-1: 100;
+    --font-weight-2: 200;
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+    --font-weight-7: 700;
+    --font-weight-8: 800;
+    --font-weight-9: 900;
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
@@ -717,6 +729,11 @@ header.abajo .nav__btns i:hover{
 
 /*=========SUN========*/
 
+.sol__faev{
+    height: 150px;
+    width: 150px;   
+}
+
 .sun{
     position: fixed;
     z-index: -1;
@@ -875,7 +892,7 @@ header.abajo .nav__btns i:hover{
   }
 
 .mySlides img{
-    max-height: 550px;
+    max-height: 188px;
     object-fit: cover;
     padding: 0;
 }
@@ -975,7 +992,7 @@ header.abajo .nav__btns i:hover{
 }
 
 .news__img img{
-    width: 333px;
+    width: 100%;
     max-height: 333px;
     object-fit: cover;
 }
@@ -1809,6 +1826,11 @@ margin-bottom: var(--mb-0-75);
         .mySlides{
             padding: 2rem;
         }
+        .mySlides img{
+            max-height: 700px;
+            object-fit: cover;
+            padding: 0;
+        }
 
 
         .overlay a{
@@ -1948,6 +1970,11 @@ margin-bottom: var(--mb-0-75);
             margin-bottom: 0;
         }
 
+        .sol__faev{
+            height: 300px;
+            width: 300px;  
+        }
+
         .sun{
             position: fixed;
             z-index: -1;
@@ -1955,9 +1982,9 @@ margin-bottom: var(--mb-0-75);
             width: 300px;
             top: 40%;
             left: 10%;
-            -webkit-animation: spin 8s linear infinite;
-            -moz-animation: spin 8s linear infinite;
-            animation: spin 8s linear infinite;
+            -webkit-animation: spin 25s linear infinite;
+            -moz-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
         }
 
         @-webkit-keyframes spin{
