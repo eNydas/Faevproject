@@ -2233,6 +2233,23 @@ margin-bottom: var(--mb-0-75);
             margin: auto;
             padding-top: 0px;
         }
+
+        .sol__faev{
+            height: 300px;
+            width: 300px;  
+        }
+
+        .sun{
+            position: fixed;
+            z-index: -1;
+            height: 300px;
+            width: 300px;
+            top: 40%;
+            left: 10%;
+            -webkit-animation: spin 25s linear infinite;
+            -moz-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
+        }
     }
 }
 
@@ -2344,6 +2361,22 @@ margin-bottom: var(--mb-0-75);
         margin: auto;
     }
 
+    .sol__faev{
+        height: 300px;
+        width: 300px;  
+    }
+
+    .sun{
+        position: fixed;
+        z-index: -1;
+        height: 300px;
+        width: 300px;
+        top: 40%;
+        left: 10%;
+        -webkit-animation: spin 25s linear infinite;
+        -moz-animation: spin 25s linear infinite;
+        animation: spin 25s linear infinite;
+    }
 
 }
 
