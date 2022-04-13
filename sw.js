@@ -3,7 +3,6 @@
 const CACHE_NAME = 'v.1.0.1',
   urlsToCache = [
     './',
-    '/index.html',
     '/assets/css/styles.css',
     '/assets/css/donaciones.css',
     '/assets/css/galeria.css',
