@@ -6,7 +6,7 @@
     $telefono = $_POST['telefono'];
     $mensaje = $_POST['mensaje'];
 
-    $header = "enviado desde el formulario";
+    $header = "enviado desde hoja de contacto";
     $mensajeCompleto = "Nombre: " . $nombre ."\nCorreo: ". $email ."\nTelefono: " .$telefono ."\nMensaje: ". $mensaje;
 
     mail($destinatario, $nombre, $mensajeCompleto);

@@ -8,7 +8,7 @@
     $telefono = $_POST['telefono'];
 
     $header = "enviado desde el formulario de inscripción";
-    $mensajeCompleto = "Nombre: " . $nombre ."\nCorreo: ". $email ."\nTelefono: " .$telefono ."\nPrograma al que aplica: ". $programa . "\nEdad: " . $edad .;
+    $mensajeCompleto = "Nombre: " . $nombre ."\nCorreo: ". $email ."\nTelefono: " .$telefono ."\nPrograma al que aplica: ". $programa . "\nEdad: " . $edad;
 
     mail($destinatario, $nombre, $mensajeCompleto);
     echo "<script>alert('correo enviado exitosamente')</script>";
